@@ -1,0 +1,27 @@
+= Titel des Dokuments: Untertitel
+:revnumber: v0.1
+:revdate: 05.08.2020
+:revremark: Entwurf
+:author: Jens Schumacher
+:email: jeschu@ok.de
+:sectnums:
+:toc: preamble
+:toclevels: 4
+:toc-title: Inhalt
+
+:description: Beschreibung des Dokuments
+:keywords: Schlüsselwörter
+
+Das ist eine optionale Präambel (eine erstes Kapitel ohne Titel).
+
+== Erstes Kapitel
+
+Ein wenig Text.
+
+== Markup Language
+
+```
+Text kann *fett*, _kursiv_ und auch mit `monospace` formatiert werden.
+```
+
+Text kann *fett*, _kursiv_ und auch mit `monospace` formatiert werden.
