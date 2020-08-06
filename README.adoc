@@ -12,16 +12,178 @@
 :description: Beschreibung des Dokuments
 :keywords: Schlüsselwörter
 
-Das ist eine optionale Präambel (eine erstes Kapitel ohne Titel).
+Das hier ist eine optionale Präambel (eine erstes Kapitel ohne Titel).
 
-== Erstes Kapitel
+* https://www.vogella.com/tutorials/AsciiDoc/article.html
+* https://jaxenter.de/asciidoc-features-66027
 
-Ein wenig Text.
 
-== Markup Language
+== Textformate
+
+Formatiere Text normal, _kursiv_, *fett*, `mono`.
+
+Manchmal ist [small]#kleinerer Text# schön. +
+Manchmal ist [big]#größer# besser.
+
+.Ein Listing
+----
+> CD Folge 4
+> gradle asciidoctpr
+----
+
+== Heading Level 1
+
+=== Heading Level 2
+
+== Listen und Aufzählungen
+
+* Erster Eintrag
+* ein weiterer
+
+. Nummer eins
+. Nummer zwei
+
+=== Listen über mehrere Zeilen
+
+* Ein Listeneintrag kann mehrere Zeilen haben. +
+Dazu verwendet man den Zeilenumbruch '+' ...
+
+== Links und Verweise
+
+=== Links
+
+Schreibe einfach https://github.com/jeschu - daraus wird automatisch ein
+Hyperlink. +
+Du kannst Links aber auch einen https://github.com/jeschu[schönen Namen] geben.
+
+=== Verweise
+
+<<ein-verweis,Erklärung>> erzeugt einen Link zur Erklärung von irgendetwas.
+
+[[ein-verweis]]
+Und hier kommt dann die Erklärung.
+
+== Tabellen
+
+[cols="1,2a",options="header",frame="topbot",grid="rows"]
+|===
+|Header 1 |Header 2
+|Zelle 1
+|Zelle 2
+|===
+
+
+
+
+
+
+
+
+
+
+=== Menüs und Buttons
 
 ```
-Text kann *fett*, _kursiv_ und auch mit `monospace` formatiert werden.
-```
+menu:View[Zoom > Reset]
 
-Text kann *fett*, _kursiv_ und auch mit `monospace` formatiert werden.
+Bitte den btn:[OK] Button drücken.
+```
+====
+menu:View[Zoom > Reset]
+
+Bitte den btn:[OK] Button drücken.
+====
+
+=== Bilder
+
+image::https://www.vogella.com/tutorials/AsciiDoc/img/vogellacompany.jpg[vogella Logo, 100, 100]
+
+=== Inline Icons
+
+Es können Inline-Icons von https://fontawesome.com/icons?d=gallery[Font Awesome]
+verwendet werden.
+
+icon:comment[]
+icon:file[]
+icon:address-card[]
+
+icon:headphones[] icon:spotify[]
+
+=== Callouts
+
+```
+System.out.println("Hello");  # <.>
+private int a;
+<.> Imports the library
+```
+```
+System.out.println("Hello");  # <.>
+private int a;
+```
+<.> Imports the library
+
+=== Collapsible Elements
+.Title
+[%collapsible]
+====
+Ein faltbarer Block
+====
+
+=== Admonition Paragraphs
+
+```
+Here are the other built-in admonition types:
+
+NOTE: Some additional info...
+
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
+```
+Here are the other built-in admonition types:
+
+NOTE: Some additional info...
+
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
+
+=== Zitate
+
+[quote, Douglas Adams, Interview]
+____
+Es steckt ein Sinn in dieser Geschichte, aber der ist dem Chronisten im
+Augenblick entfallen.
+____
+
+=== Index
+
+The Lady of the Lake, her arm clad in the purest shimmering samite,
+held aloft Excalibur from the bosom of the water,
+signifying by divine providence that I, ((Arthur)),
+was to carry Excalibur (((Sword, Broadsword, Excalibur))).
+That is why I am your king. Shut up! Will you shut up?!
+Burn her anyway! I'm not a witch.
+Look, my liege! We found them.
+
+indexterm2:[Lancelot] was one of the Knights of the Round Table.
+indexterm:[knight, Knight of the Round Table, Lancelot]
+
+[index]
+= Index
+
+=== Fußnoten
+
+The hail-and-rainbow protocol can be initiated at five levels:
+double, tertiary, supernumerary, supermassive, and apocalyptic party.footnote:[The double hail-and-rainbow level makes my toes tingle.]
+A bold statement!footnote:disclaimer[Opinions are my own.]
+
+Another outrageous statement.footnote:disclaimer[]
