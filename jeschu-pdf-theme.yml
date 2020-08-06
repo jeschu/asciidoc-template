@@ -1,3 +1,10 @@
 extends: default
+
 base:
   font-color: #000000
+
+title-page:
+  logo:
+    image: image:title-logo.png[pdfwidth=40%]
+    align: center
+    top: 10%
