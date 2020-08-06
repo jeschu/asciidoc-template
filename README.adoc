@@ -8,6 +8,7 @@
 :toc: preamble
 :toclevels: 4
 :toc-title: Inhalt
+:icons: font
 
 :description: Beschreibung des Dokuments
 :keywords: Schlüsselwörter
@@ -72,16 +73,7 @@ Und hier kommt dann die Erklärung.
 |Zelle 2
 |===
 
-
-
-
-
-
-
-
-
-
-=== Menüs und Buttons
+== Menüs und Buttons
 
 ```
 menu:View[Zoom > Reset]
@@ -94,20 +86,21 @@ menu:View[Zoom > Reset]
 Bitte den btn:[OK] Button drücken.
 ====
 
-=== Bilder
+== Bilder
 
 image::https://www.vogella.com/tutorials/AsciiDoc/img/vogellacompany.jpg[vogella Logo, 100, 100]
 
-=== Inline Icons
+== Inline Icons
 
 Es können Inline-Icons von https://fontawesome.com/icons?d=gallery[Font Awesome]
 verwendet werden.
 
-icon:comment[]
-icon:file[]
-icon:address-card[]
+icon:comment[] icon:file[] icon:address-card[]
 
-icon:headphones[] icon:spotify[]
+icon:headphones[] icon:spotify[size=300%]
+
+icon:address-book[] icon:address-book[set=fas] icon:address-book[set=far]
+
 
 === Callouts
 
@@ -164,6 +157,14 @@ Es steckt ein Sinn in dieser Geschichte, aber der ist dem Chronisten im
 Augenblick entfallen.
 ____
 
+=== Fußnoten
+
+The hail-and-rainbow protocol can be initiated at five levels:
+double, tertiary, supernumerary, supermassive, and apocalyptic party.footnote:[The double hail-and-rainbow level makes my toes tingle.]
+A bold statement!footnote:disclaimer[Opinions are my own.]
+
+Another outrageous statement.footnote:disclaimer[]
+
 === Index
 
 The Lady of the Lake, her arm clad in the purest shimmering samite,
@@ -179,11 +180,3 @@ indexterm:[knight, Knight of the Round Table, Lancelot]
 
 [index]
 = Index
-
-=== Fußnoten
-
-The hail-and-rainbow protocol can be initiated at five levels:
-double, tertiary, supernumerary, supermassive, and apocalyptic party.footnote:[The double hail-and-rainbow level makes my toes tingle.]
-A bold statement!footnote:disclaimer[Opinions are my own.]
-
-Another outrageous statement.footnote:disclaimer[]
